@@ -1,26 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Cifrado Cesar</title>
+  <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
   <header>
-    <h1>Cifrado César</h1>
+    <h1 class="textpresent">
+      <strong> Cifrado César</strong>
+    </h1>
   </header>
 
-  <div class="container-fluid">
-    <a href='#presentadora'><img src="assets/images/one.png" class="img-present"  alt="presentadora"></a>
-</div>
+  <div class="hidden-xs container-fluid">
+    <a href='#presentadora'>
+      <img src="assets/images/one.png" class="img-present img-responsive" alt="presentadora">
+    </a>
+  </div>
+  <section>
+    <div class="container-fluid cipher">
+      <div class="col-xs-8 col-md-8 chat">
+        <div class="mb-0 mt-8 plane">
+          <h2>¿Que deseas hacer?</h2>
+        </div>
+        <div class="botones">
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModalcifrar">
+            Cifrar
+          </button>
+          <button type="button" class="btn  btn-success" data-toggle="modal" data-target="#myModaldescifrar">
+            Descifrar
+          </button>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!--Modales-->
+  <section>
+    <div class="modal fade" id="myModalcifrar">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button tyle="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h3>Ingresa el texto que desea cifrar</h3>
+          </div>
+          <div class="form-group row">
+            <label for="example-text-input" class="col-2 col-form-label">Text</label>
+            <div class="col-10">
+              <input class="form-control" type="text" value="" id="example-text-input">
+            </div>
+          </div>
+          <div class="box-result-cipher h30 border-grey rounded mt-3 p-3">
+            <p></p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="modal fade" id="myModaldescifrar">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button tyle="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h3>Ingresa el texto que desea descifrar</h3>
+          </div>
+          <div class="form-group row">
+            <label for="example-text-input" class="col-2 col-form-label">Text</label>
+            <div class="col-10">
+              <input class="form-control" type="text" value="" id="example-text-input">
+            </div>
+          </div>
+          <div class="box-result-cipher h30 border-grey rounded mt-3 p-3">
+            <p></p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
 
 
+  <script src="vendors/jquery/jquery-3.2.1.min.js"></script>
+  <script src="vendors/bootstrap/js/bootstrap.min.js"></script>
+  <script src=" /app.js"></script>
 
-
-<script src=" js/animacion.js"></script>
 
 </body>
 
