@@ -2,7 +2,7 @@
 let btnCipher = document.querySelector('.btn-cifrado');
 let btnDecipher = document.querySelector('.btn-descifrado');
 let clear = document.querySelector('.clear');
-let decipherClear = document.getElementById('clear');
+let decipherClear = document.querySelector('.clear3');
 
 
 
@@ -37,8 +37,8 @@ btnCipher.addEventListener('click', () => {
   boxCipher.textContent = codeCipher;
 });
 
-// Descifrado.
 
+// Descifrado.
 btnDecipher.addEventListener('click', () => {
   let inputDecipher = document.querySelector('.decipher');
   let boxDecipher = document.querySelector('.box-result-desc p');
@@ -69,4 +69,20 @@ btnDecipher.addEventListener('click', () => {
   boxDecipher.textContent = codeDecipher;
 });
 
+
+// Limpiando box.
+let clearBox = () => {
+  let inputCipher = document.querySelector('.cipher');
+  let boxCipher = document.querySelector('.box-result-c p');
+  let inputDecipher = document.querySelector('.decipher');
+  let boxDecipher = document.querySelector('.box-result-desc p');
+
+  inputDecipher.value = '';
+  inputCipher.value = '';
+  boxCipher.textContent = '';
+  boxDecipher.textContent = '';
+};
+
+clear.addEventListener('click', clearBox);
+decipherClear.addEventListener('click', clearBox);
 
