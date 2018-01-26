@@ -3,13 +3,12 @@ header{
   height: 10%;
   width: 100%;
   background-color: #01848f;
- 
+
 }
 .textpresent{
   color: white;
   font-size: 2.5rem;
-  margin-left:10%;
-  margin-top: 1%;
+  margin-left:40%;
 }
 .img-present {
   margin-top: 15%;
@@ -20,6 +19,7 @@ header{
 
 
 /*cifrando y descifrando*/
+
 /*Cifrando*/
 .container-cipher{
  border:1px solid rgb(9, 5, 66);
@@ -35,11 +35,12 @@ header{
 .btn-cifrado{
   margin-top: 5%;
 }
-.clear{ 
+.clear, .clear3{ 
   float: right;
   position: absolute;
   margin-top: 1%;
 }
+
 .form-group{
   margin-left: 1%;
 }
@@ -69,7 +70,7 @@ h3{
   background-color: rgb(255, 247, 247);
   width: 38%;
   height: 50%;
-  margin-top: 36%;
+  margin-top: 32%;
   margin-left: 51%;
   position: absolute;
   margin-bottom: 10%;
