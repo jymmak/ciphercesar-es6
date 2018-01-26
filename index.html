@@ -16,57 +16,55 @@
     </h1>
   </header>
 
-  <div>
-    <div class="hidden-xs container-fluid">
-      <a href='#presentadora'>
-        <img src="assets/images/one.png" class="img-present img-responsive" alt="presentadora">
-      </a>
-    </div>
-
-  </div>
-
-  <!--Seccion Cifrado-->
+   <!--Seccion Cifrado-->
   <section>
-    <div class="container-cipher">
-      <div class="mt-3">
-        <button class="btn btn-success clear">Nuevo Mensaje</button>
-      </div>
-      <br>
-      <h3>Ingresa el texto que desea cifrar</h3>
-      <div class="form-group row">
-        <label for="example-text-input" class="col-2 col-form-label">Text</label>
-        <div>
-          <input type="text" class="form-control cipher" id="exampleFormControlInput1">
+    <div class="container">
+      <div class="row">
+        <div class="col s5">
+          <div class="container-cipher">
+            <div class="mt-3">
+              <button class="btn btn-success clear">Nuevo Mensaje</button>
+            </div>
+            <br>
+            <h3>Ingresa el texto que desea cifrar</h3>
+            <div class="form-group row">
+              <label for="example-text-input" class="col-2 col-form-label">Text</label>
+              <div>
+                <input type="text" class="form-control cipher" id="exampleFormControlInput1">
+              </div>
+              <div>
+                <button class=" btn btn-info btn-cifrado">Codifica</button>
+              </div>
+            </div>
+            <div class="box-result-c h30 border-grey rounded mt-3 p-3 text-center">
+              <p class="result"></p>
+            </div>
+          </div>
         </div>
-        <div>
-          <button class=" btn btn-info btn-cifrado">Codifica</button>
-        </div>
       </div>
-      <div class="box-result-c h30 border-grey rounded mt-3 p-3 text-center">
-        <p class="result"></p>
-      </div>
-    </div>
-  </section>
 
-    <!--Seccion Descifrado-->
-  <section>
-    <div class="container-descipher">
-      <div class="mt-3">
-        <button class="btn btn-success clear3">Nuevo Mensaje</button>
-      </div>
-      <br>
-      <h3>Ingresa el texto que desea descifrar</h3>
-      <div class="form-group row">
-        <label for="example-text-input" class="col-form-label">Text</label>
-        <div>
-          <input type="text" class="form-control decipher" id="exampleFormControlInput1">
+      <div class="row">
+        <div class="col s5 offset-s1">
+          <div class="container-descipher">
+            <div class="mt-3">
+              <button class="btn btn-success clear3">Nuevo Mensaje</button>
+            </div>
+            <br>
+            <h3>Ingresa el texto que desea descifrar</h3>
+            <div class="form-group row">
+              <label for="example-text-input" class="col-form-label">Text</label>
+              <div>
+                <input type="text" class="form-control decipher" id="exampleFormControlInput1">
+              </div>
+              <div>
+                <button class=" btn btn-info btn-descifrado">Decodifica</button>
+              </div>
+            </div>
+            <div class="box-result-desc h30 border-grey rounded mt-3 p-3 text-center">
+              <p class="result"></p>
+            </div>
+          </div>
         </div>
-        <div>
-          <button class=" btn btn-info btn-descifrado">Decodifica</button>
-        </div>
-      </div>
-      <div class="box-result-desc h30 border-grey rounded mt-3 p-3 text-center">
-        <p class="result"></p>
       </div>
     </div>
   </section>
